@@ -1,0 +1,93 @@
+﻿/*
+//using UCSConsoleGameFramework;
+//
+//Carro carro1 = new Carro();
+//Carro carro2 = new Carro();
+//
+//carro1.Cor = "Verde";
+//carro1.Valor = 10000;
+//carro1.Ano = 2015;
+//
+//carro2.Cor = "Azul";
+//carro2.Valor = 20000;
+//carro2.Ano = 2020;
+//
+//Console.WriteLine($"O carro {carro1.Cor}, do ano {carro1.Ano}, custa {carro1.Valor}.");
+//Console.WriteLine($"O carro {carro2.Cor}, do ano {carro2.Ano}, custa {carro2.Valor}.");
+//
+//// Animal
+//// -> Nome
+//// -> Espécie
+//// -> Idade
+//// -> Quantidade de Patas
+//// -> Altura
+//// -> Peso
+//
+//Carro carro3 = new Carro();
+//
+//carro3.Cor = "Azul";
+//carro3.Valor = 20000;
+//carro3.Ano = 2020;
+//
+//Animal animal = new Animal() {
+//    Nome = "Lobo",
+//    Especie = "Canis",
+//    Altura = 50.4f,
+//    Peso = 30.25f,
+//    Idade = 7,
+//    QuntidadeDePatas = 4
+//};
+//
+//Console.WriteLine($"Existe um {animal.Nome}, que por natureza possui uma altura de {animal.Altura} \n e um peso de: {animal.Peso})");
+//
+//Pessoa p = new Pessoa();
+//p.Nome = "Glauber";
+//p.Idade = 34;
+//
+//PessoaFisica pessoaFisica = new PessoaFisica();
+//pessoaFisica.Nome = "Nome da Pessoa Física";
+//pessoaFisica.Idade = 30;
+//pessoaFisica.CPF = "00000000000";
+//
+//void ImprimirNomeDaPessoa(Pessoa parametroEnviado)
+//{
+//    Console.WriteLine($"O nome da pessoa enviada foi: {parametroEnviado.Nome}");
+//}
+//
+//ImprimirNomeDaPessoa(p);
+//ImprimirNomeDaPessoa(pessoaFisica);
+//
+//Console.WriteLine("╔════════════╗");
+//Console.WriteLine("║            ║");
+//Console.WriteLine("╚════════════╝");
+
+using UCSConsoleGameFramework.Base;
+
+World world = new World(20, 60);
+world.Fill();
+
+
+string copo = @"
+──────▄▀─
+─█▀▀▀█▀█─
+──▀▄░▄▀──
+────█────
+──▄▄█▄▄──
+";
+
+world.Draw(3, 5, "O jogador está diante de um copo...");
+world.Draw(4, 5, "Ele irá se servir...");
+world.Draw(5, 5, copo);
+
+//world.Print();
+
+Scene scene = new Scene();
+//scene.Add(copo);
+//scene.Add("Outra Linha");
+scene.Add("Linha 1");
+scene.Add("Linha 2");
+scene.Add("Linha 3");
+scene.Add("Linha 4");
+scene.Add("Linha 5");
+scene.Show();
+*/
