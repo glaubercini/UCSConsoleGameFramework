@@ -46,6 +46,7 @@ namespace UCSConsoleGameFramework.Base
 
         public void Move(Scene scene)
         {
+            Console.Clear();
             scene.Show();
         }
     }

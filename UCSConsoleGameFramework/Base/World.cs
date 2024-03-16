@@ -64,7 +64,7 @@ namespace UCSConsoleGameFramework.Base
         {
             string newPhrase = phrase.Replace("\r\n", "\n");
             newPhrase = newPhrase.Replace("\r", "\n");
-            newPhrase = newPhrase.Trim();
+            newPhrase = newPhrase.Trim('\n').Trim('\t');
 
             int total_lines = 1;
 
@@ -84,22 +84,6 @@ namespace UCSConsoleGameFramework.Base
             }
 
             return total_lines;
-
-            //int l = line;
-            //int c = column;
-            //for (int i = 0; i < symbol.Length; i++)
-            //{
-            //    string current = symbol[i].ToString();
-            //    if (current == "\n")
-            //    {
-            //        l++;
-            //    }
-            //}
-
-            //for (int c = column, cont = 0; c < (symbol.Length + column); c++, cont++)
-            //{
-            //    Map[line, c] = $"{symbol[cont]}";
-            //}
         }
 
         public void Print()
@@ -113,37 +97,5 @@ namespace UCSConsoleGameFramework.Base
                 Console.WriteLine();
             }
         }
-
-        public string Print(int rowsNumber, int columnsNumber)
-        {
-            if (rowsNumber < 2 || columnsNumber < 2)
-                throw new Exception($@"Dimensões ({rowsNumber}x{columnsNumber}) inválidas");
-
-            string word = string.Empty;
-                for (int i = 0; i < rowsNumber; i++)
-                {
-                    if (i == 0)
-                        word = "╔";
-                    else if (i < rowsNumber - 1)
-                        word += "\n║";
-                    else
-                        word += "\n╚";
-
-                    for (int j = 0; j < columnsNumber - 2; j++)
-                        if (i == 0 || i == rowsNumber - 1)
-                            word += "═";
-                        else
-                            word += " ";
-
-                    if (i == 0)
-                        word += "╗";
-                    else if (i < rowsNumber - 1)
-                        word += "║";
-                    else
-                        word += "╝";
-                }
-
-                return word;
-            }
-        }
+    }
 }

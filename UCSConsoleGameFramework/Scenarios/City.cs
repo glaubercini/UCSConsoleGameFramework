@@ -11,15 +11,24 @@ namespace UCSConsoleGameFramework.Scenarios
     {
         public City()
         {
-            Add("Você está na cidade, ela é fria como o gelo.");
-            Add("-----------------");
-            Add("---            --");
-            Add("---            --");
-            Add("---            --");
-            Add("---     ___    --");
-            Add("---    |   |   --");
-            Add("1) Você deseja entrar no castelo?");
-            Add("2) Você deseja ir para a floresta?");
+            Add(@"   ^    / \:/ \      ^               +                        |>");
+            Add(@"  / \      ^        / \        *    / \    *              |>  |");
+            Add(@" /   \             /   \      OnO  :xxx:  OnO             |  III     |>");
+            Add(@"(_____)           (_____)     I I   I I   I I           /-|\ III i>  |");
+            Add(@" |   |  _   _   _  |   |      I I   I I   I I         _|__|__III i   ^");
+            Add(@" | O |_| |_| |_| |_| O |     O_O_O_O_O_O_O_O_O     |>\______/III i  ^^^");
+            Add(@" |   |   - _^_     |   |     \_______________/     |   !__!__III/\ ^^^^^");
+            Add(@" |  _|    //|\\  - |   |      I     ___     I     /\\ ////|====IIII ===");
+            Add(@" |   |   ///|\\\   |  -|      I    / i \    I    /\\\/////|====IIII ===");
+            Add(@" |-  |_  |||||||   |   |      I   I: i :I   I    | | ||||::::::IIII ===");
+            Add(@" |   |   |||||||   |-  |      I___I:_i_:I___I    | | ||||      IIII ===");
+            Add(@" |___|___|||||||___|___|                         -----------------------");
+            Add(@"         (      (");
+            Add(@"          \      \            . o       c ,              0   \0");
+            Add(@"           )      )           `'#v-- --v#`'             /0--- :\");
+            Add(@"           |      |            /'>     <`\              / >  / >");
+            Add(@"           (      )");
+            Add(@"            \      \");
         }
 
         public override void ProcessOption(string playerOption)
