@@ -1,4 +1,6 @@
-﻿using UCSConsoleGameFramework.Scenarios;
+﻿using UCSConsoleGameFramework;
+using UCSConsoleGameFramework.Base;
+using UCSConsoleGameFramework.Scenarios;
 
-Menu menu = new Menu();
-menu.Show();
+Menu c = new Menu();
+c.Show();

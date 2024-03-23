@@ -7,7 +7,7 @@ using UCSConsoleGameFramework.Base;
 
 namespace UCSConsoleGameFramework.Scenarios
 {
-    internal class Castle :Scene
+    internal class Castle : Scene
     {
         public Castle()
         {

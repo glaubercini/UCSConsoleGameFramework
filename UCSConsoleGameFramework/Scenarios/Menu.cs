@@ -19,8 +19,7 @@ namespace UCSConsoleGameFramework.Scenarios
         {
             if (playerOption == "1")
             {
-                City city = new City();
-                Move(city);
+                Move(new PlayerCreation());
             }
             else
             {

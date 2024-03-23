@@ -12,12 +12,21 @@ namespace UCSConsoleGameFramework.Base
 
         private int Top;
 
+        public string UserOptionMessage;
+
         public Scene()
         {
-            World = new World(20, 80);
+            World = new World(22, 80);
             World.Fill();
 
             Top = 1;
+
+            UserOptionMessage = "Qual a sua escolha?";
+
+            if (!string.IsNullOrWhiteSpace(Player.Instance.Name))
+            {
+                Add($"Jogador: {Player.Instance.Name} | Vida: {Player.Instance.Life} | ${Player.Instance.Money}");
+            }
         }
 
         public void Add(string text)
@@ -27,7 +36,7 @@ namespace UCSConsoleGameFramework.Base
 
         public string RequestUserOption()
         {
-            Console.WriteLine("Qual a sua escolha?");
+            Console.WriteLine(UserOptionMessage);
             string option = Console.ReadLine();
 
             return option;

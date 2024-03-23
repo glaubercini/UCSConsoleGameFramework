@@ -29,6 +29,7 @@ namespace UCSConsoleGameFramework.Scenarios
             Add(@"           |      |            /'>     <`\              / >  / >");
             Add(@"           (      )");
             Add(@"            \      \");
+            Add(@"1) Para ir ao Castelo       2) Ir para a Floresta         3) Loja");
         }
 
         public override void ProcessOption(string playerOption)
@@ -42,6 +43,10 @@ namespace UCSConsoleGameFramework.Scenarios
             {
                 Florest f = new Florest();
                 Move(f);
+            }
+            else if (playerOption == "3")
+            {
+                Move(new Shop());
             }
             else
             {
